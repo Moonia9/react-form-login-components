@@ -13,7 +13,7 @@ app.get("/add/:valueA/:valueB", (req, res) => {
   console.log(req.params);
   const valueB = parseInt(req.params.valueB);
   const sum = valueA + valueB;
-  res.send(`The sum of the two numbers is ${sum}`);
+  res.send(`The sum of the two numbers is ${sum}`); //or using res.send(sum.toString());
 });
 
 //Addition using query string
